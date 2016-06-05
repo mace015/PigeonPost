@@ -3,5 +3,7 @@ var errors = {
 	2: 'Please fill in all registration data!',
 	3: 'Login details incorrect!',
 	4: 'Token incorrect!',
-	5: 'Token is empty!'
+	5: 'Token is empty!',
+	6: 'No permission',
+	7: 'Something went wrong!'
 };

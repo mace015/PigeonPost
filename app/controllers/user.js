@@ -6,7 +6,7 @@ var jwt = require('jsonwebtoken');
 module.exports = function(socket, database, active){
 	
 	// Find users
-	socket.on('user:search', function(data){
+	/*socket.on('user:search', function(data){
 		if (active.clients[socket.id] == 0){ socket.emit('return:user:search', { status: false, error: "No permission!" }); return false; }
 		
 		database.query("SELECT `id`,`email` FROM `users` WHERE `email` LIKE '%?%' LIMIT 20", array(data.email), function(err, results){
@@ -30,7 +30,7 @@ module.exports = function(socket, database, active){
 				socket.emit('return:user:addFriend', { status: false });
 			}
 		});
-	});
+	});*/
 
 	//User register
 	socket.on('user:register', function(data){

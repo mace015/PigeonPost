@@ -14,10 +14,11 @@ var active = {
 };
 
 var database = mysql.createConnection({
-	'host': config.host,
-	'user': config.user,
-	'password': config.password,
-	'database': config.database
+	host: config.host,
+	port: config.port,
+	user: config.user,
+	password: config.password,
+	database: config.database
 });
 
 database.connect(function(err){
